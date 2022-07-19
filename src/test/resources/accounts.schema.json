@@ -13,7 +13,7 @@
     "additionalProperties": false,
     "properties": {
       "id": {
-        "type": "byte"
+        "type": "integer"
       },
       "name": {
         "type": "string",
@@ -27,7 +27,8 @@
         "type": "integer"
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "pattern": "^((RUB){1})?((USD){1})?$"
       }
     }
   }
